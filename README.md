@@ -75,6 +75,12 @@ To replace the captured group, use $1,$2,$3
 - bad, because its greedy `/<.+>/`
 - correct, be greedy until you met '>' sign. `/<.+?>/`
 
+5. rhb-account-selector (to capture the account number)
+
+- first attempt `/i\s*([\d|-]+)/`. I felt like this one is more succinct.
+- second attempt `/i\s*(\d+[\d|-]+)/`.
+
+
 ### References 
 
 - great intro. https://www.youtube.com/watch?v=sa-TUpSx1JA
