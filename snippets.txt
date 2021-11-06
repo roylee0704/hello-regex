@@ -1,0 +1,30 @@
+.       - Any Character Except New Line
+\d      - Digit (0-9)
+\D      - Not a Digit (0-9)
+\w      - Word Character
+\W      - Not a Word Character 
+\s      - Whitespace (space, tab, newline)
+\S      - Not a Whitespace  (space, tab, newline)
+
+
+\b      - Word boundary
+\B      - Not a Word boundary
+^       - Beginning of a String 
+$       - End of a String
+
+[]      - Matches Characters in brackets. Do not need to escape meta-characters.
+[^ ]    - Matches Characters NOT in brackets
+|       - Either or 
+( )     - Group. Need to escape meta-characters.
+
+
+
+By default, they only matches 1 character at a time. Use quantifier to match multiple Characters
+
+Quantifiers:
+*       - 0 or more
++       - 1 or more
+?       - 0 or 1 (it's like a question: yes or no)
+{3}     - Exact Number 
+{3,4}   - Range of Numbers (Minimum, Maximum)
+
