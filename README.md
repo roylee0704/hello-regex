@@ -77,8 +77,9 @@ To replace the captured group, use $1,$2,$3
 
 5. rhb-account-selector (to capture the account number)
 
-- first attempt `/i\s*([\d|-]+)/`. I felt like this one is more succinct.
-- second attempt `/i\s*(\d+[\d|-]+)/`.
+- first attempt `/i\s*([\d|-]+)/`. I felt like this one is more succinct compared to 2nd attempt.
+- second attempt `/i\s*(\d+[\d|-]+)/`. Trying to shake off the dependency on character `i`. Since they might change to other characters.
+- third attempt `\s+(\d[\d|-]+)\s+`. I think this is the best version. I'm grabbing something that is surrounded by at least 1 space. That account number should prefix with a number, followed by either digits or '-' symbol.
 
 
 ### References 
